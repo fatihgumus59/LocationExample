@@ -13,6 +13,8 @@
 		02F483442B9E032700E7F800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F483422B9E032700E7F800 /* Main.storyboard */; };
 		02F483462B9E032800E7F800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F483452B9E032800E7F800 /* Assets.xcassets */; };
 		02F483492B9E032800E7F800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F483472B9E032800E7F800 /* LaunchScreen.storyboard */; };
+		02F483522B9E03F900E7F800 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F483512B9E03F900E7F800 /* CoreLocation.framework */; };
+		02F483542B9E092700E7F800 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F483532B9E092700E7F800 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		02F483452B9E032800E7F800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02F483482B9E032800E7F800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02F4834A2B9E032800E7F800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F483512B9E03F900E7F800 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		02F483532B9E092700E7F800 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F483542B9E092700E7F800 /* MapKit.framework in Frameworks */,
+				02F483522B9E03F900E7F800 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 			children = (
 				02F4833B2B9E032700E7F800 /* LocationExample */,
 				02F4833A2B9E032700E7F800 /* Products */,
+				02F483502B9E03F900E7F800 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +72,15 @@
 				02F4834A2B9E032800E7F800 /* Info.plist */,
 			);
 			path = LocationExample;
+			sourceTree = "<group>";
+		};
+		02F483502B9E03F900E7F800 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02F483532B9E092700E7F800 /* MapKit.framework */,
+				02F483512B9E03F900E7F800 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +311,7 @@
 				DEVELOPMENT_TEAM = VL64TXT8SA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LocationExample/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Konum İzni";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,6 +340,7 @@
 				DEVELOPMENT_TEAM = VL64TXT8SA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LocationExample/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Konum İzni";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
